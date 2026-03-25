@@ -286,6 +286,7 @@ a {
   position: relative;
   width: 100%;
   max-width: 350px;
+  margin: 0 auto;
   aspect-ratio: 1;
   border-radius: 20px;
   background: linear-gradient(145deg, var(--surface-color-light), var(--bg-color));
@@ -305,24 +306,8 @@ a {
   100% { transform: translateY(0px); }
 }
 
-.image-wrapper::after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 100%;
-  height: 100%;
-  border: 3px solid var(--primary);
-  border-radius: 20px;
-  z-index: -1;
-  transition: var(--transition);
-}
-
 .image-wrapper:hover {
   animation-play-state: paused;
-}
-.image-wrapper:hover::after {
-  transform: translate(15px, 15px);
 }
 .profile-img {
   width: 100%;
